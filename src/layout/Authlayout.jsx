@@ -1,9 +1,12 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 
 const Authlayout = () => {
     return (
-        <div>
-            This is Authlayout
+        <div className="container mx-auto">
+            <Navbar></Navbar>
+            <Outlet/>
         </div>
     );
 };

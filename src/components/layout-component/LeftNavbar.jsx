@@ -12,7 +12,7 @@ const LeftNavbar = () => {
     return (
         <div>
             <h2 className="font-semibold">All Category</h2>
-            <div className="flex flex-col items-start my-4 gap-2 md:pr-40">
+            <div className="flex flex-col items-start my-4 gap-2 md:pr-32">
                 {categories.map(category => <NavLink to={`/category/${category.category_id}`} className="py-2 w-full px-8 cursor-pointer hover:bg-neutral-300 bg-white text-neutral-600 border-none rounded font-semibold" key={category.category_id}>{category.category_name}</NavLink>)}
             </div>
         </div>
