@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Latestnews from "../components/Latestnews";
 import LeftNavbar from "../components/layout-component/LeftNavbar";
@@ -25,7 +26,7 @@ const Homelayout = () => {
                     <LeftNavbar></LeftNavbar>
                 </aside>
                 <section className="col-span-6">
-                    <p>this is middle side</p>
+                    <Outlet/>
                 </section>
                 <aside className="col-span-3">
                     <RightElement></RightElement>
